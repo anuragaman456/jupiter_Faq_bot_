@@ -1,2 +1,2 @@
-# jupitor_Faq-_bot
+# jupitor_Faq_bot
 jupitor Faq bot
