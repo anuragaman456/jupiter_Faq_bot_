@@ -1,58 +1,72 @@
 [
   {
-    "question": "How do I complete KYC verification?",
-    "answer": "To complete KYC verification, please provide your PAN card and Aadhaar number. You can also use your driving license or passport as identity proof. The verification process usually takes 24-48 hours.",
-    "category": "kyc",
-    "source_url": "https://help.jupiter.money/kyc",
-    "confidence": 0.9
-  },
-  {
-    "question": "What payment methods are accepted?",
-    "answer": "Jupiter accepts UPI payments, debit cards, credit cards, and net banking. You can also link your bank account for direct transfers. All transactions are secured with bank-grade encryption.",
-    "category": "payments",
-    "source_url": "https://help.jupiter.money/payments",
-    "confidence": 0.9
-  },
-  {
-    "question": "How do I earn rewards?",
-    "answer": "Earn rewards by making transactions, referring friends, and participating in special offers. You can earn up to 5% cashback on eligible purchases. Rewards are credited within 24 hours.",
-    "category": "rewards",
-    "source_url": "https://help.jupiter.money/rewards",
-    "confidence": 0.9
-  },
-  {
-    "question": "What are the transaction limits?",
-    "answer": "Daily transaction limit is ₹1,00,000 and monthly limit is ₹10,00,000. These limits may vary based on your account type and verification status. Contact support to increase limits.",
-    "category": "limits",
-    "source_url": "https://help.jupiter.money/limits",
-    "confidence": 0.9
-  },
-  {
-    "question": "How do I reset my password?",
-    "answer": "To reset your password, go to the login page and click \"Forgot Password\". Enter your registered email or phone number. You will receive an OTP to create a new password.",
-    "category": "security",
-    "source_url": "https://help.jupiter.money/security",
-    "confidence": 0.9
-  },
-  {
-    "question": "Can I use Jupiter internationally?",
-    "answer": "Currently, Jupiter services are available only in India. International transactions are not supported. You can use the app while traveling abroad for domestic transactions.",
+    "question": "Communication Guidelines",
+    "answer": "At Jupiter, we value open and respectful communication with our customers. We strive to provide the best possible services and support to meet your needs. Our commitment to treating all our customers with politeness, courtesy, and respect remains unwavering throughout every interaction, whether via phone, email, social media, or in-person. We kindly request you adhere to the following guidelines when interacting with us:",
     "category": "general",
-    "source_url": "https://help.jupiter.money/general",
-    "confidence": 0.9
+    "source_url": "https://jupiter.money/communication-guidelines",
+    "confidence": 0.8
   },
   {
     "question": "How do I add money to my Jupiter account?",
-    "answer": "You can add money using UPI, bank transfer, or by linking your bank account. Go to \"Add Money\" section and choose your preferred method. Funds are usually credited instantly.",
-    "category": "payments",
-    "source_url": "https://help.jupiter.money/add-money",
+    "answer": "You can add money to your Jupiter account through multiple methods: 1) UPI transfer from any bank account, 2) NEFT/RTGS transfer using your Jupiter account details, 3) Add money through the Jupiter app using UPI or card, 4) Cash deposit at partner locations. The money is typically credited within minutes to a few hours depending on the method used.",
+    "category": "account_management",
+    "source_url": "https://jupiter.money/help/add-money",
     "confidence": 0.9
   },
   {
-    "question": "What documents are required for account opening?",
-    "answer": "You need a valid PAN card, Aadhaar number, and a working mobile number. For full KYC, you may also need address proof like utility bills or bank statements.",
-    "category": "kyc",
-    "source_url": "https://help.jupiter.money/documents",
+    "question": "What are the fees for using Jupiter?",
+    "answer": "Jupiter offers a transparent fee structure: No hidden charges, no minimum balance requirements, and no annual fees. You only pay for specific services like ATM withdrawals (after free limit), card replacement, or premium features. All standard banking services are free of charge.",
+    "category": "fees_charges",
+    "source_url": "https://jupiter.money/pricing",
+    "confidence": 0.85
+  },
+  {
+    "question": "How do I contact Jupiter customer support?",
+    "answer": "You can contact Jupiter customer support through multiple channels: 1) In-app chat support available 24/7, 2) Email support at support@jupiter.money, 3) Phone support during business hours, 4) Social media channels (Twitter, Instagram). Our support team typically responds within 2-4 hours.",
+    "category": "support",
+    "source_url": "https://jupiter.money/contact-us/",
     "confidence": 0.9
+  },
+  {
+    "question": "Is Jupiter safe and secure?",
+    "answer": "Yes, Jupiter is completely safe and secure. We are a licensed banking partner with Federal Bank and follow all RBI guidelines. Your money is insured up to ₹5 lakhs under DICGC. We use bank-grade security with 256-bit encryption, biometric authentication, and real-time fraud monitoring to protect your account.",
+    "category": "security",
+    "source_url": "https://jupiter.money/security",
+    "confidence": 0.95
+  },
+  {
+    "question": "How do I apply for a Jupiter account?",
+    "answer": "Applying for a Jupiter account is simple: 1) Download the Jupiter app from App Store or Google Play, 2) Enter your mobile number and verify with OTP, 3) Complete KYC by providing PAN and Aadhaar details, 4) Take a selfie for verification, 5) Your account will be activated within minutes. No physical documents or branch visits required.",
+    "category": "account_management",
+    "source_url": "https://jupiter.money/get-started",
+    "confidence": 0.9
+  },
+  {
+    "question": "What are the ATM withdrawal limits?",
+    "answer": "Jupiter offers free ATM withdrawals up to ₹25,000 per month. After the free limit, a nominal fee of ₹20 per withdrawal applies. You can withdraw from any ATM across India. The daily withdrawal limit is ₹10,000 and the monthly limit is ₹1,00,000 as per RBI guidelines.",
+    "category": "transactions",
+    "source_url": "https://jupiter.money/help/atm-limits",
+    "confidence": 0.85
+  },
+  {
+    "question": "How do I block my Jupiter card?",
+    "answer": "You can block your Jupiter card instantly through the app: 1) Go to Cards section in the app, 2) Select the card you want to block, 3) Tap on 'Block Card' option, 4) Confirm the action. The card will be blocked immediately. You can also call our support team for immediate assistance.",
+    "category": "security",
+    "source_url": "https://jupiter.money/help/block-card",
+    "confidence": 0.9
+  },
+  {
+    "question": "What is Jupiter's interest rate on savings?",
+    "answer": "Jupiter offers competitive interest rates on savings. Currently, you can earn up to 4% p.a. on your savings balance. The interest is calculated daily and credited monthly. Higher balances may qualify for premium interest rates. Check the app for current rates as they may vary.",
+    "category": "savings",
+    "source_url": "https://jupiter.money/savings",
+    "confidence": 0.8
+  },
+  {
+    "question": "How do I update my KYC details?",
+    "answer": "To update your KYC details: 1) Open the Jupiter app and go to Profile section, 2) Select 'Update KYC' option, 3) Choose the field you want to update (address, PAN, etc.), 4) Upload the required documents, 5) Submit for verification. Updates are typically processed within 24-48 hours.",
+    "category": "account_management",
+    "source_url": "https://jupiter.money/help/kyc-update",
+    "confidence": 0.85
   }
 ]

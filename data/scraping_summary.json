@@ -1,0 +1,11 @@
+{
+  "total_faqs": 1,
+  "categories": {
+    "general": 1
+  },
+  "avg_confidence": 0.8,
+  "scraped_at": "2025-06-23 23:43:04",
+  "source_urls": [
+    "https://jupiter.money/communication-guidelines"
+  ]
+}

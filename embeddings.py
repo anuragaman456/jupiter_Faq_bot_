@@ -116,13 +116,31 @@ class EmbeddingManager:
             try:
                 self.chroma_collection = self.chroma_client.get_collection(collection_name)
                 logger.info("Using existing Chroma collection")
-            except:
+                
+                # Check if collection is empty and add data if needed
+                if self.chroma_collection.count() == 0:
+                    logger.info("Chroma collection is empty, adding FAQ data")
+                    self._add_faqs_to_chroma(faqs, embeddings)
+                else:
+                    logger.info(f"Chroma collection has {self.chroma_collection.count()} documents")
+                    
+            except Exception as e:
+                logger.info(f"Creating new Chroma collection: {e}")
                 self.chroma_collection = self.chroma_client.create_collection(
                     name=collection_name,
                     metadata={"description": "Jupiter FAQ embeddings"}
                 )
                 logger.info("Created new Chroma collection")
+                self._add_faqs_to_chroma(faqs, embeddings)
             
+        except Exception as e:
+            logger.warning(f"Chroma setup failed: {e}")
+            self.chroma_client = None
+            self.chroma_collection = None
+    
+    def _add_faqs_to_chroma(self, faqs: List[Dict], embeddings: np.ndarray):
+        """Add FAQ data to Chroma collection"""
+        try:
             # Add documents to collection
             documents = []
             metadatas = []
@@ -150,9 +168,8 @@ class EmbeddingManager:
             logger.info(f"Added {len(faqs)} documents to Chroma collection")
             
         except Exception as e:
-            logger.warning(f"Chroma setup failed: {e}")
-            self.chroma_client = None
-            self.chroma_collection = None
+            logger.error(f"Failed to add FAQs to Chroma: {e}")
+            raise
     
     def search_faiss(self, query: str, k: int = 5, threshold: float = 0.5) -> List[Dict]:
         """Search using FAISS index"""

@@ -19,8 +19,8 @@ except ImportError:
     OPENAI_AVAILABLE = False
 
 try:
-    from langchain.llms import OpenAI as LangchainOpenAI
-    from langchain.chat_models import ChatOpenAI
+    from langchain_community.llms import OpenAI as LangchainOpenAI
+    from langchain_community.chat_models import ChatOpenAI
     from langchain.prompts import PromptTemplate
     from langchain.chains import LLMChain
     LANGCHAIN_AVAILABLE = True

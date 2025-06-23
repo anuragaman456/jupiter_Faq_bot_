@@ -292,9 +292,13 @@ def initialize_gemini():
 def initialize_bot():
     """Initialize the FAQ bot"""
     try:
-        # Load preprocessed FAQs
-        with open('data/preprocessed_faqs.json', 'r', encoding='utf-8') as f:
-            faqs = json.load(f)
+        # Load FAQ data - try preprocessed first, then fallback to jupiter_faqs
+        try:
+            with open('data/preprocessed_faqs.json', 'r', encoding='utf-8') as f:
+                faqs = json.load(f)
+        except FileNotFoundError:
+            with open('data/jupiter_faqs.json', 'r', encoding='utf-8') as f:
+                faqs = json.load(f)
         
         # Initialize embedding manager
         embedding_manager = EmbeddingManager()
