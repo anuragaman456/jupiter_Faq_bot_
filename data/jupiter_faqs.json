@@ -1,0 +1,58 @@
+[
+  {
+    "question": "How do I complete KYC verification?",
+    "answer": "To complete KYC verification, please provide your PAN card and Aadhaar number. You can also use your driving license or passport as identity proof. The verification process usually takes 24-48 hours.",
+    "category": "kyc",
+    "source_url": "https://help.jupiter.money/kyc",
+    "confidence": 0.9
+  },
+  {
+    "question": "What payment methods are accepted?",
+    "answer": "Jupiter accepts UPI payments, debit cards, credit cards, and net banking. You can also link your bank account for direct transfers. All transactions are secured with bank-grade encryption.",
+    "category": "payments",
+    "source_url": "https://help.jupiter.money/payments",
+    "confidence": 0.9
+  },
+  {
+    "question": "How do I earn rewards?",
+    "answer": "Earn rewards by making transactions, referring friends, and participating in special offers. You can earn up to 5% cashback on eligible purchases. Rewards are credited within 24 hours.",
+    "category": "rewards",
+    "source_url": "https://help.jupiter.money/rewards",
+    "confidence": 0.9
+  },
+  {
+    "question": "What are the transaction limits?",
+    "answer": "Daily transaction limit is ₹1,00,000 and monthly limit is ₹10,00,000. These limits may vary based on your account type and verification status. Contact support to increase limits.",
+    "category": "limits",
+    "source_url": "https://help.jupiter.money/limits",
+    "confidence": 0.9
+  },
+  {
+    "question": "How do I reset my password?",
+    "answer": "To reset your password, go to the login page and click \"Forgot Password\". Enter your registered email or phone number. You will receive an OTP to create a new password.",
+    "category": "security",
+    "source_url": "https://help.jupiter.money/security",
+    "confidence": 0.9
+  },
+  {
+    "question": "Can I use Jupiter internationally?",
+    "answer": "Currently, Jupiter services are available only in India. International transactions are not supported. You can use the app while traveling abroad for domestic transactions.",
+    "category": "general",
+    "source_url": "https://help.jupiter.money/general",
+    "confidence": 0.9
+  },
+  {
+    "question": "How do I add money to my Jupiter account?",
+    "answer": "You can add money using UPI, bank transfer, or by linking your bank account. Go to \"Add Money\" section and choose your preferred method. Funds are usually credited instantly.",
+    "category": "payments",
+    "source_url": "https://help.jupiter.money/add-money",
+    "confidence": 0.9
+  },
+  {
+    "question": "What documents are required for account opening?",
+    "answer": "You need a valid PAN card, Aadhaar number, and a working mobile number. For full KYC, you may also need address proof like utility bills or bank statements.",
+    "category": "kyc",
+    "source_url": "https://help.jupiter.money/documents",
+    "confidence": 0.9
+  }
+]

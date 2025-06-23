@@ -1,0 +1,16 @@
+{
+  "total_faqs": 7,
+  "categories": {
+    "kyc": 2,
+    "payments": 2,
+    "limits": 1,
+    "rewards": 1,
+    "security": 1
+  },
+  "languages": {
+    "en": 7
+  },
+  "avg_confidence": 0.9000000000000001,
+  "avg_readability": 0.0,
+  "avg_length": 211.14285714285714
+}
