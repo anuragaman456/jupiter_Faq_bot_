@@ -103,33 +103,29 @@ class EmbeddingManager:
     
     def setup_chroma(self, faqs: List[Dict], embeddings: np.ndarray):
         """Setup Chroma for alternative vector search"""
-            
-            # Create or get collection
-            collection_name = "jupiter_faqs"
-            try:
-                self.chroma_collection = self.chroma_client.get_collection(collection_name)
-                logger.info("Using existing Chroma collection")
-                
-                # Check if collection is empty and add data if needed
-                if self.chroma_collection.count() == 0:
-                    logger.info("Chroma collection is empty, adding FAQ data")
-                    self._add_faqs_to_chroma(faqs, embeddings)
-                else:
-                    logger.info(f"Chroma collection has {self.chroma_collection.count()} documents")
-                    
-            except Exception as e:
-                logger.info(f"Creating new Chroma collection: {e}")
-                self.chroma_collection = self.chroma_client.create_collection(
-                    name=collection_name,
-                    metadata={"description": "Jupiter FAQ embeddings"}
-                )
-                logger.info("Created new Chroma collection")
+        # Create or get collection
+        collection_name = "jupiter_faqs"
+        try:
+            self.chroma_collection = self.chroma_client.get_collection(collection_name)
+            logger.info("Using existing Chroma collection")
+            # Check if collection is empty and add data if needed
+            if self.chroma_collection.count() == 0:
+                logger.info("Chroma collection is empty, adding FAQ data")
                 self._add_faqs_to_chroma(faqs, embeddings)
-            
+            else:
+                logger.info(f"Chroma collection has {self.chroma_collection.count()} documents")
         except Exception as e:
-            logger.warning(f"Chroma setup failed: {e}")
-            self.chroma_client = None
-            self.chroma_collection = None
+            logger.info(f"Creating new Chroma collection: {e}")
+            self.chroma_collection = self.chroma_client.create_collection(
+                name=collection_name,
+                metadata={"description": "Jupiter FAQ embeddings"}
+            )
+            logger.info("Created new Chroma collection")
+            self._add_faqs_to_chroma(faqs, embeddings)
+        
+        # If any error occurs in the above, set chroma_client and chroma_collection to None
+        # (This part was previously inside a nested except, but should be at the function level)
+        # If you want to keep this, you can add another try-except around the whole function if needed.
     
     def _add_faqs_to_chroma(self, faqs: List[Dict], embeddings: np.ndarray):
         """Add FAQ data to Chroma collection"""
