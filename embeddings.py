@@ -12,8 +12,7 @@ from typing import List, Dict, Tuple, Optional, Union
 import logging
 from sentence_transformers import SentenceTransformer
 import faiss
-import chromadb
-from chromadb.config import Settings
+
 from sklearn.metrics.pairwise import cosine_similarity
 import torch
 from transformers import AutoTokenizer, AutoModel
@@ -104,12 +103,6 @@ class EmbeddingManager:
     
     def setup_chroma(self, faqs: List[Dict], embeddings: np.ndarray):
         """Setup Chroma for alternative vector search"""
-        try:
-            # Initialize Chroma client
-            self.chroma_client = chromadb.PersistentClient(
-                path="./chroma_db",
-                settings=Settings(anonymized_telemetry=False)
-            )
             
             # Create or get collection
             collection_name = "jupiter_faqs"
