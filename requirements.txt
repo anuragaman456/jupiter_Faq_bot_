@@ -10,7 +10,7 @@ requests>=2.31.0
 beautifulsoup4>=4.12.0
 selenium>=4.15.0
 webdriver-manager>=4.0.0
-
+matplotlib
 # AI and Machine Learning
 openai>=1.3.0
 google-generativeai>=0.3.0
